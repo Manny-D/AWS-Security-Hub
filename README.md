@@ -56,9 +56,9 @@ Security Hub integrates with various providers (3rd party and AWS services) that
 To check on what integrations are supported, on the left pane, click on <b>Integrations</b>. 
 You can search for an integration or scroll down the list. Then click on <b>Accept findings</b>. 
 
-<b>Note</b>: for managed services, many AWS services will already be enabled to accept findings. For 3rd party providers, some may need to be purchased and require configuration prior to being able to Accept findings. 
-
 ![AWS Integrations](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/ee8798a4-75f3-41be-a82d-221d450876b7)
+
+<b>Note</b>: for managed services, many AWS services will already be enabled to accept findings. For 3rd party providers, some may need to be purchased and require configuration prior to being able to Accept findings. 
 
 <br>
 
