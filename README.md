@@ -20,9 +20,22 @@ Upon accessing AWS Security Hub, we are presented with the summary page where th
 
 Security Hub continuously checks our resources against security best practices from enabled standards. The Summary page shows security scores for each standard and a combined score reflecting how well our configuration meets those standards.
 
-If we click on one of the security standards, for example, the <b>AWS Foundational Security Best Practices v1.0.0</b>, we will be presented with more details.
+If we click on one of the security standards, we will be presented with more details. <br>
+eg. <b>AWS Foundational Security Best Practices v1.0.0</b>
 
 ![Standard overview](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/cc5a8102-00ba-437d-b6ef-77a8f3814780)
+
+We can see why the <b>Compliance Status</b> is showing as <b>FAILED</b> by clicking on the hyperlinked <b>Title</b>.
+
+![Finding specifics](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/87193d4e-f82d-4dbc-a6e8-2b0d01f8d94e)
+
+<br>
+
+## Insights
+
+Security Hub displays several related findings here, which help to assess our security posture and quickly identify risks. 
+
+![AWS Insights](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/f7c83c8e-b765-4a25-8f59-f1db920e00a3)
 
 <br>
 
@@ -37,21 +50,15 @@ You can search for an integration or scroll down the list. Then click on <b>Acce
 
 ![AWS Integrations](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/9545061e-3ce8-4810-9f86-2f0bfabf864a)
 
-We can see why the <b>Compliance Status</b> is in a Failed state by clicking on the hyperlinked <b>Title</b>
-
-
-
 <br>
 
 ## Findings
 
-Here is where Security Hub will report any failed security checks and security issues that are detected across the AWS resources. 
+This is where Security Hub will report any failed security checks and security issues that are detected across our AWS resources. 
 
 ![AWS Findings](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/2a2aa2f4-129a-49fa-a5f8-fcf280018460)
 
 From here, the security team will need to decide how to take action. For the purpose of this lab, we’ll be setting up a custom action that allows us to notify the Security Operations Center (SOC) on selected findings. 
-
-![Finding specifics](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/87193d4e-f82d-4dbc-a6e8-2b0d01f8d94e)
 
 <br>
 
