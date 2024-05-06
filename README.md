@@ -79,26 +79,26 @@ On the left pane, click on <b>Settings</b> -> to the right, click <b>Create cust
 ![Custom actions](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/df907ecb-328d-4f31-923b-74846142119d)
 
 
-In the pop-up, enter in an <b>Action name</b>, <b>Description</b> and <b>Custom action ID</b> -> then click <b>Create custom action</b>.
+In the pop-up, enter an <b>Action name</b>, <b>Description</b> and <b>Custom action ID</b> -> then click <b>Create custom action</b>.
 
 ![Create custom action](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/5600cbaa-9522-48d3-91b4-b648c00461c0)
 
 
-It will now be listed.   
+It will now populate in the list.   
 
 ![Created custom action](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/e705b052-47ab-4bca-b9f1-cd700b4aee64)
 
-We now need to link this Custom action to an Event Bridge rule.
+We now need to link this Custom action to an EventBridge rule.
 
-<b>Note</b>: Be sure to copy the Custom action ARN, since it will be needed for the next step!
+<b>Note</b>: Be sure to copy the <b>Custom action ARN</b>, since it will be needed for the next step!
 
 <br>
 
-### Amazon Event Bridge
+### Amazon EventBridge
 
-Navigate to <b>Amazon Event Bridge</b> -> click <b>Create rule</b>.
+Navigate to <b>Amazon EventBridge</b> -> click <b>Create rule</b>.
 
-![Amazon Event Bridge](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/9696b1d6-370d-40c1-bdf2-6aba07a472da)
+![Amazon EventBridge](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/9696b1d6-370d-40c1-bdf2-6aba07a472da)
 
 For the <b>Define rule detail</b> options under <b>Rule detail</b>, enter a <b>Name</b> while leaving the other settings at their default -> click <b>Next</b>.
 
@@ -132,7 +132,7 @@ We can skip the <b>Configure tags</b> options -> click <b>Next</b> and on the <b
 
 ![EventBridge Rules](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/a52ea06e-e71d-44b3-b0b9-3b2ce9e24387)
 
-Once completed, it can be located on the left pane under <b>Events / Rules</b>.
+Once completed, it will populate in the Rules list. It can also be located on the left pane under <b>Events / Rules</b>.
 
 <br>
 
