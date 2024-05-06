@@ -27,7 +27,8 @@ eg. <b>AWS Foundational Security Best Practices v1.0.0</b>
 
 We can see why the <b>Compliance Status</b> is showing as <b>FAILED</b> by clicking on the hyperlinked <b>Title</b>.
 
-![Finding specifics](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/87193d4e-f82d-4dbc-a6e8-2b0d01f8d94e)
+![Finding specifics](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/93a1a874-f474-4de1-bb9d-37db471ba494)
+
 
 Along with the additional details, recommended remediation instructions are provided!
 
