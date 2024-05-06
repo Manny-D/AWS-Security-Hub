@@ -6,9 +6,23 @@
 
 ## Description
 
-This lab was part of an online course that provided an overview of [Amazon Web Services Security Hub](https://aws.amazon.com/security-hub/), looked at specific Findings and created a Custom Action that allowed us to send a notification to our Security Operations Center (SOC) team. 
+This lab was part of an online course that provided an overview of [Amazon Web Services Security Hub](https://aws.amazon.com/security-hub/). In the end, we assessed specific Findings and created a Custom Action that allowed us to send a notification to our Security Operations Center (SOC) team for remediation. 
 
 AWS Security Hub is a cloud security posture management (CSPM) service that performs security best practice checks, aggregates alerts, and enables automated remediation.
+
+<br>
+
+## Summary
+
+Upon accessing AWS Security Hub, we are presented with the summary page where the findings of enabled security standards are displayed.
+
+![Summary](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/0d6d5e24-da2d-4ea0-b04c-1a2d044b50d9)
+
+Security Hub continuously checks our resources against security best practices from enabled standards. The Summary page shows security scores for each standard and a combined score reflecting how well our configuration meets those standards.
+
+If we click on one of the security standards, for example, the <b>AWS Foundational Security Best Practices v1.0.0</b>, we will be presented with more details.
+
+![Standard overview](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/cc5a8102-00ba-437d-b6ef-77a8f3814780)
 
 <br>
 
@@ -23,6 +37,10 @@ You can search for an integration or scroll down the list. Then click on <b>Acce
 
 ![AWS Integrations](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/9545061e-3ce8-4810-9f86-2f0bfabf864a)
 
+We can see why the <b>Compliance Status</b> is in a Failed state by clicking on the hyperlinked <b>Title</b>
+
+
+
 <br>
 
 ## Findings
@@ -33,6 +51,7 @@ Here is where Security Hub will report any failed security checks and security i
 
 From here, the security team will need to decide how to take action. For the purpose of this lab, we’ll be setting up a custom action that allows us to notify the Security Operations Center (SOC) on selected findings. 
 
+![Finding specifics](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/87193d4e-f82d-4dbc-a6e8-2b0d01f8d94e)
 
 <br>
 
@@ -93,3 +112,23 @@ then click <b>Next</b>.
 ![Create rule](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/93b28d11-d556-464e-bb78-4c9a746f88df)
 
 We can skip the <b>Configure tags</b> options -> click <b>Next</b> and on the <b> Review and create</b> options, scroll to the bottom and click <b>Create rule</b>.
+
+![EventBridge Rules](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/a52ea06e-e71d-44b3-b0b9-3b2ce9e24387)
+
+Once completed, it can be located on the left pane under <b>Events / Rules</b>.
+
+<br>
+
+### Testing
+
+Now to confirm the Custom action is working, navigate to <b>Findings</b> and to the left of any Finding, place a check mark in the empty box. 
+
+![AWS Findings 2](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/19b7e5bc-1ffc-4dad-b6a7-c21aa88daccc)
+
+To the top right, click on <b>Actions</b> -> select the <b>Custom action</b> created earlier.
+
+![Actions](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/b9396dc0-3cd4-4da8-a7b3-fd9ccfa1ba36)
+
+A few moments later, the following banner should appear:
+
+![Sent finding](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/de7bc07e-f557-4630-880f-a5ecfb829408)
