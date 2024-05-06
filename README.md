@@ -14,14 +14,14 @@ This lab was part of an online course that provided an overview of the [AWS Secu
 
 Upon accessing AWS Security Hub, we are presented with the Summary page, a dashboard showing our security score (total and by standard) as well as the <b>Resources with the most failed security checks</b>.
 
-![Summary Dashboard](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/7d0da267-549e-4447-a8dd-d8b84cbfedd4)
+![Summary Dashboard](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/674f66dc-bad1-4aa3-9e8c-df6f009c3811)
 
 <b>Note</b>: Security Hub continuously checks our resources against security best practices. 
 
 To view more details about a specific security standard, click on it. <br>
 eg. <b>AWS Foundational Security Best Practices v1.0.0</b>
 
-![Standard overview](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/cc5a8102-00ba-437d-b6ef-77a8f3814780)
+![Standard overview](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/c8531e7a-621c-4ecd-97fd-8b784db89ee9)
 
 We can see why the <b>Compliance Status</b> is showing as <b>FAILED</b> by clicking on the hyperlinked <b>Title</b>.
 
@@ -58,7 +58,7 @@ You can search for an integration or scroll down the list. Then click on <b>Acce
 
 <b>Note</b>: for managed services, many AWS services will already be enabled to accept findings. For 3rd party providers, some may need to be purchased and require configuration prior to being able to Accept findings. 
 
-![AWS Integrations](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/9545061e-3ce8-4810-9f86-2f0bfabf864a)
+![AWS Integrations](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/ee8798a4-75f3-41be-a82d-221d450876b7)
 
 <br>
 
@@ -74,12 +74,12 @@ From here, the security team will need to decide how to take action. For the pur
 
 ## Security Hub: Settings 
  
-On the left pane, click on <b>Settings</b> -> <b>Custom actions</b>.
+On the left pane, click on <b>Settings</b> -> to the right, click <b>Create custom action</b>.
 
 ![Custom actions](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/df907ecb-328d-4f31-923b-74846142119d)
 
 
-In the pop-up, enter in an <b>Action name</b>, <b>Description</b> and <b>Custom actin ID</b> -> then click <b>Create custom action</b>.
+In the pop-up, enter in an <b>Action name</b>, <b>Description</b> and <b>Custom action ID</b> -> then click <b>Create custom action</b>.
 
 ![Create custom action](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/5600cbaa-9522-48d3-91b4-b648c00461c0)
 
@@ -112,8 +112,8 @@ Scroll down to <b>Event pattern</b> -> select the following:
 - <b>AWS service</b>: <b>Security Hub</b>
 - <b>Event type</b>: <b>Security Hub Findings - Custom Action</b>
 - <b>Specific custom action ARN(s)</b>: (paste in the <b>custom action ARN</b> copied earlier)
-
-![Event pattern](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/f8ac9efa-9abd-4e46-afbb-9580824d2168)
+  
+![Event pattern](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/9bc5a9c7-843f-48f4-aefb-dd151aa5c24b)
 
 then click <b>Next</b>.
 
