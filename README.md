@@ -29,6 +29,8 @@ We can see why the <b>Compliance Status</b> is showing as <b>FAILED</b> by click
 
 ![Finding specifics](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/87193d4e-f82d-4dbc-a6e8-2b0d01f8d94e)
 
+Along with the additional details, recommended remediation instructions are provided!
+
 <br>
 
 ## Insights
