@@ -6,13 +6,11 @@
 
 ## Description
 
-This lab was part of an online course that provided an overview of [Amazon Web Services Security Hub](https://aws.amazon.com/security-hub/). In the end, we assessed specific Findings and created a Custom Action that allowed us to send a notification to our Security Operations Center (SOC) team for remediation. 
-
-AWS Security Hub is a cloud security posture management (CSPM) service that performs security best practice checks, aggregates alerts, and enables automated remediation.
+This lab was part of an online course that provided an overview of the [AWS Security Hub](https://aws.amazon.com/security-hub/), where we created a Custom action to address specific Findings, utilizing AWS EventBridge and AWS Simple Notification Service (SNS) to manually send out a notification.
 
 <br>
 
-## Summary
+## Security Hub: Summary Section
 
 Upon accessing AWS Security Hub, we are presented with the summary page where the findings of enabled security standards are displayed.
 
@@ -34,7 +32,7 @@ Along with the additional details, recommended remediation instructions are prov
 
 <br>
 
-## Insights
+## Security Hub: Insights Section
 
 Security Hub displays several related findings here, which help to assess our security posture and quickly identify risks. 
 
@@ -42,7 +40,7 @@ Security Hub displays several related findings here, which help to assess our se
 
 <br>
 
-## Integrations
+## Security Hub: Integrations Section
 
 Security Hub integrates with various providers (3rd party and AWS services) that allow the import and / or export of findings. It normalizes and aggregates the ingested data and acts as a single pane of glass to help understand the security and compliance posture of our AWS account(s). 
 
@@ -55,7 +53,7 @@ You can search for an integration or scroll down the list. Then click on <b>Acce
 
 <br>
 
-## Findings
+## Security Hub: Findings Section
 
 This is where Security Hub will report any failed security checks and security issues that are detected across our AWS resources. 
 
@@ -65,7 +63,7 @@ From here, the security team will need to decide how to take action. For the pur
 
 <br>
 
-## Settings
+## Security Hub: Settings Section
  
 On the left pane, click on <b>Settings</b> -> <b>Custom actions</b>.
 
@@ -131,14 +129,24 @@ Once completed, it can be located on the left pane under <b>Events / Rules</b>.
 
 ### Testing
 
-Now to confirm the Custom action is working, navigate to <b>Findings</b> and to the left of any Finding, place a check mark in the empty box. 
+To confirm the Custom action is working, navigate to <b>Findings</b> and to the left of any Finding, place a check mark in the empty box. 
 
 ![AWS Findings 2](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/19b7e5bc-1ffc-4dad-b6a7-c21aa88daccc)
 
-To the top right, click on <b>Actions</b> -> select the <b>Custom action</b> created earlier.
+Towards the top right, click on <b>Actions</b> -> select the <b>Custom action</b> created earlier.
 
 ![Actions](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/b9396dc0-3cd4-4da8-a7b3-fd9ccfa1ba36)
 
-A few moments later, the following banner should appear:
+After a few moments, the following banner should appear, confirming the send. 
 
 ![Sent finding](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/de7bc07e-f557-4630-880f-a5ecfb829408)
+
+<br>
+
+## Conclusion
+
+AWS Security Hub is a cloud security posture management (CSPM) service acting as our central dashboard for cloud security. It continuously checks AWS resources against security best practices and compliance standards.  
+
+![AWS Security Hub](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/11b8bc8f-ce28-46cd-b20c-e6f8ce138b73)
+
+It aggregates findings from various AWS security services, giving us a unified view of our security posture and highlighting potential security issues. This allows us to proactively address and remediate them, thus improving our overall security posture.
