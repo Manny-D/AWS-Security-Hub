@@ -10,15 +10,15 @@ This lab was part of an online course that provided an overview of the [AWS Secu
 
 <br>
 
-## Security Hub: Summary Section
+## Security Hub: Summary 
 
-Upon accessing AWS Security Hub, we are presented with the summary page where the findings of enabled security standards are displayed.
+Upon accessing AWS Security Hub, we are presented with the Summary page, a dashboard showing our security score (total and by standard) as well as the <b>Resources with the most failed security checks</b>.
 
-![Summary](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/0d6d5e24-da2d-4ea0-b04c-1a2d044b50d9)
+![Summary Dashboard](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/7d0da267-549e-4447-a8dd-d8b84cbfedd4)
 
-Security Hub continuously checks our resources against security best practices from enabled standards. The Summary page shows security scores for each standard and a combined score reflecting how well our configuration meets those standards.
+<b>Note</b>: Security Hub continuously checks our resources against security best practices. 
 
-If we click on one of the security standards, we will be presented with more details. <br>
+To view more details about a specific security standard, click on it. <br>
 eg. <b>AWS Foundational Security Best Practices v1.0.0</b>
 
 ![Standard overview](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/cc5a8102-00ba-437d-b6ef-77a8f3814780)
@@ -28,7 +28,16 @@ We can see why the <b>Compliance Status</b> is showing as <b>FAILED</b> by click
 ![Finding specifics](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/93a1a874-f474-4de1-bb9d-37db471ba494)
 
 
-Along with the additional details, recommended remediation instructions are provided!
+Along with the additional details, recommended <b>Remediation instructions</b> are available!
+
+<br>
+
+## Security Hub: Security standards 
+
+This is a section where you can also view the results for a specific security standard, as well as configure and enable the other available <b>Security standards</b>. 
+
+![Security standards](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/087dab56-7eeb-425f-88f7-6b0a9a40c98b)
+
 
 <br>
 
@@ -40,7 +49,7 @@ Security Hub displays several related findings here, which help to assess our se
 
 <br>
 
-## Security Hub: Integrations Section
+## Security Hub: Integrations 
 
 Security Hub integrates with various providers (3rd party and AWS services) that allow the import and / or export of findings. It normalizes and aggregates the ingested data and acts as a single pane of glass to help understand the security and compliance posture of our AWS account(s). 
 
@@ -53,7 +62,7 @@ You can search for an integration or scroll down the list. Then click on <b>Acce
 
 <br>
 
-## Security Hub: Findings Section
+## Security Hub: Findings 
 
 This is where Security Hub will report any failed security checks and security issues that are detected across our AWS resources. 
 
@@ -63,7 +72,7 @@ From here, the security team will need to decide how to take action. For the pur
 
 <br>
 
-## Security Hub: Settings Section
+## Security Hub: Settings 
  
 On the left pane, click on <b>Settings</b> -> <b>Custom actions</b>.
 
@@ -145,7 +154,7 @@ After a few moments, the following banner should appear, confirming the send.
 
 ## Conclusion
 
-AWS Security Hub is a cloud security posture management (CSPM) service acting as our central dashboard for cloud security. It continuously checks AWS resources against security best practices and compliance standards.  
+Security Hub is a cloud security posture management (CSPM) service acting as our central dashboard for cloud security. It continuously checks AWS resources against security best practices and compliance standards.  
 
 ![AWS Security Hub](https://github.com/Manny-D/AWS-Security-Hub/assets/99146530/11b8bc8f-ce28-46cd-b20c-e6f8ce138b73)
 
